@@ -1,25 +1,22 @@
-﻿using System;
+﻿// Bài tập căn bậc 2
+using System;
 
-
-namespace bai_thuc_hanh_2
+namespace ConsoleApp1
 {
     class Program
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Input x: ");
+            int x = Convert.ToInt32(Console.ReadLine());
+            
 
-            int n;
-            double x, K;
+            Console.WriteLine("Input y: ");
+            float y = Convert.ToInt32(Console.ReadLine());
 
-            Console.Write("Nhap n:");
-            n = int.Parse(Console.ReadLine());
-            Console.Write("Nhap x:");
-            x = double.Parse(Console.ReadLine());
-
-            K = (x * x + x + 1) * n + (x * x - x + 1) * n;
-
-            Console.Write("ket qua z {0}", K);
-            Console.ReadKey();
+            Console.WriteLine("z = "+(2*x + Math.Sqrt(y))/13);
+            Console.WriteLine(" ");
+            Console.WriteLine(Math.Sqrt(x));
         }
     }
 }
