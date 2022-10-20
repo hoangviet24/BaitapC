@@ -1,5 +1,4 @@
 using System;
-using System.Security.Cryptography;
 
 namespace ConsoleApp7
 {
@@ -37,6 +36,9 @@ namespace ConsoleApp7
             if (d < a && d < b && d < c)
                 Console.WriteLine("Min la " + d);
             Console.WriteLine("---------------------------------------");
+            
+            \\ luư ý khi chạy phải comment 1 trong 2 lệnh
+                
             int a, b, c,d, max, min;
             Console.Write("\n Nhap vao so thu nhat: ");
             a = Convert.ToInt32(Console.ReadLine());
