@@ -1,8 +1,8 @@
 ﻿using System;
 
-/*Sales= Int * fee * 12%
-	- Ship = Int * fee * 5%
-	- Total_money = Int * fee – Sales + Ship
+/*Sales= row * fee * 12%
+	- Ship = row * fee * 5%
+	- Total_money = row * fee – Sales + Ship
 */
 namespace Baitap4
 {
@@ -16,18 +16,18 @@ namespace Baitap4
             Console.WriteLine("Input fee: ");
             int fee = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Input Int: ");
-            int Int = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Input Row: ");
+            int row = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("Input Ship: ");
             int Ship = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("");
-            Sales = Int * fee * 12 / 100;
-            Ship = Int * fee * 5 / 100;
-            float Total_money = Int * fee - Sales + Ship;
-            Console.WriteLine(Sales);
-            Console.WriteLine(Ship);
-            Console.WriteLine(Total_money);
+            Sales = row * fee * 12 / 100;
+            Ship = row * fee * 5 / 100;
+            float Total_money = row * fee - Sales + Ship;
+            Console.WriteLine("So tien giam gia la: "+Sales);
+            Console.WriteLine("So tien van chuyen la: "+Ship);
+            Console.WriteLine("Tong tien la: "+Total_money);
         }
     }
 }
