@@ -6,39 +6,23 @@ namespace UsingWhile
     {
         static void Main(string[] args)
         {
-            //1.Viết chương trình nhập vào 1 số nguyên n.Cho biết:
-            //a) n là số chẵn hay số lẻ?
-            //b) n là số âm hay số không âm
-            // Cách 1: dùng do while
-            //Console.WriteLine("xac dinh so nguyen hay le, am hay duong");
-            //int n;
-            //do
-            //{
-            //    Console.Write("Nhap vao 1 so de xem nó la am hay duong chan hay le");
-            //    n = Convert.ToInt32(Console.ReadLine());
-            //    Console.Write(n + " ");
-            //    string am_duong = (n > 0) ? "So duong" : "So am";
-            //    string chan_le = (n % 2 == 0) ? "So chan" : "So le";
-            //    Console.Write(am_duong + " ");
-            //    Console.WriteLine(chan_le);
-            //    n++;
+            
+            int i = 0;
+            int n;
 
-            //}// n > 100: chỉ nhập được 1 lần với điều kiện n < 100
-            ////while (n > 100);
-            ////n < 100: chỉ được nhập 1 lần với điều kiện n > 100
-            //while (n < 100 );
-
-            ////cách 2: dùng while
-            //while (n < 100)
-            //{
-            //    Console.Write(n + " ");
-            //    string am_duong = (n > 0) ? "So duong" : "So am";
-            //    string chan_le = (n % 2 == 0) ? "So chan" : "So le";
-            //    Console.Write(am_duong + " ");
-            //    Console.WriteLine(chan_le);
-            //    n++;
-            //};
-            /*
+            do
+            {
+                Console.WriteLine("Input n: ");
+                n = Convert.ToInt32(Console.ReadLine());
+            }
+            while (n <= 0);
+            do
+            {
+                Console.WriteLine(i);
+                i++;
+            }
+            while (n > i); 
+            
              2).Viết chương trình nhập vào số nguyên n không âm. In ra dãy số từ 1 đên n, tính tổng dãy số, tính tích dãy số
              */
 
